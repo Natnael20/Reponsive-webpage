@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo, .searchbox, .right-contents {
+    margin: 10px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBox {
+  background: #2f3640;
+  height: 60px;
+  margin-top: 10px;
+  border-top-left-radius: 10px;
+  padding: 10px;
+  width: 560px;
+  height: 60px;
+}
+
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+  }
+
+.searchButton {
+  color: white;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline:none;
+  padding: 0;
+  float: left;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  
+}
+
+.right-div  {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-top: 4px;
+  text-transform: capitalize;
+  border-radius: 10px;
+}
+
+.sign-in, .favorites ,.shopping-bag {
+    list-style: none;
+    font-size: 14px;
+
+}
+
+.badge {
+  background-color:#F09819;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  font-size: 12px;
+  height: 25px;
+  line-height: 1;
+  padding: 7px 10px;
+  margin-left: 5px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 25px;
+
+}
+
+nav {
+    background:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+    
+}
+
+.left-nav {
+    background: black;
+    display: inline-block;
+    height: 40px;
+    padding: 10px 45px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    color: white;
+   
+}
+
+.left-nav:hover, .right-div:hover  {
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+.categories {
+    width: 350px;
+    height: auto;
+    margin-top: 10px;
+    float: left;
+  }
+
+  .categories p {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family:'Times New Roman', Times, serif;
+    background: rgb(234, 17, 17);
+    color: white;
+    padding: 15px;
+  }
+
+  
+ .add-content .content {
+        padding: 20px;
+        list-style: none;
+        border-bottom: 0.1px solid rgb(211, 211, 211);
+        
+  }
+
+  #unLi {
+    border-bottom: 1px solid black;
+    
+  }
+
+  .content:hover, .content:active {
+        cursor: pointer;
+        text-decoration: underline;
+        background-color: red;
+        transition:0.5s;
+  }
+
+
+  .annons {
+      height: 700px;
+  }
+
+  .second-annons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #Info {
+      padding: 20px 40px;
+  }
+
+  .button-24, .button1, .button {
+    background: #f30800;
+    border: 1px solid #e10d06;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    margin-top: 40px;
+  }
+  
+  .button-24:hover, 
+  .button-24:active, .button1:active, .button1:hover {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+  }
+  
+  .button-24:active, .button1:active {
+     opacity: .5;
+  }
+  
+.products {
+   max-width: 100%;
+   background-color: rgb(253, 253, 253);
+}
+
+  .child-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .items {
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;  
+      text-align: center;
+      width:200px;
+      height: 350px;
+      background: white;
+      margin-top: 40px; 
+  }
+
+  .items:hover, .items:active {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+.container-2 {
+    margin-top: 50px;
+}
+
+  .child-container {
+      margin: auto;
+      width: 95%;
+  }
+
+  .add-contents {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-around;
+      padding: 30px;
+  }
+
+.side {
+    width: 500px;
+    height: 400px;
+    max-width: 100%;
+    color: white;
+    padding: 10px 20px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .side-by-side {
+   width: 100%;
+   max-width: 50%;
+   padding: 1px;
+   margin-top: 20px;
+ }
+
+.full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    height: 350px;
+    width: 1100px;
+    padding: 50px;
+}
+ 
+  .add-infos, .item2-info {
+    padding: 10px;
+  }
+
+  .button-87 {
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    width: 100px;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f07619;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+  }
+
+  .button-87:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .button-87:active {
+    transform: scale(0.95);
+  }
+
+
+footer {
+   max-width: 100%;
+   margin-top: 50px;
+   background-color: black;
+   height: 350px;
+}
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .f-section-list1 {
+      display: inline;
+  }
+
+  .footer-section1 #socialmedia {
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 25px;
+      color: white;
+  } 
+  
+  #payments {
+    font-size: 30px;
+    line-height: 20px;
+    padding: 5px;
+  }
+
+  .footer-section1, .footer-section2 ,.footer-section3, .footer-section4 {
+      padding: 40px;
+      margin: 10px;
+  }
+
+  .f-section-list1, .f-section-list2,.f-section-list3, .f-section-list4 {
+      list-style: none;
+      font-size: 15px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      line-height: 35px;
+      margin-top: 10px;
+      color: white;
+  }
+
+  .f-section-list1:hover, .f-section-list1:active, .f-section-list2:hover, .f-section-list2:active, .f-section-list3:hover, .f-section-list3:active, .f-section-list4:hover, .f-section-list4:active {
+    color:red;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+@media only screen and (max-width: 900px) {
+  /* For tablets: */ 
+  .logo, .searchbox, .right-contents {
+      display: flex;
+  }
+
+  .TV {
+      width: 250px;
+  }
+    
+  .categories {
+      width: 30%;
+      text-align:start;
+  }
+
+  .annons {
+      display: block;
+  }
+
+  .side {
+      width: 62%;
+  }
+
+  .full {
+      width: auto;
+  }
+  
+  footer {
+      height: auto;
+  }
+    
+  .footer-container {
+      display: flex;
+  }
+
+}
+
+@media only screen and (max-width: 630px)  {
+  header {
+      width: auto;
+      display: block;
+      text-align: center;
+  }
+
+  .searchBox {
+      width: auto;
+  }
+
+  .left-nav {
+      display: block;
+      text-align: center;
+  }
+
+  .categories {
+      margin-bottom: 50px;    
+      width: 100%;
+      text-align: center;
+  }
+
+  #Info, #Info2 {
+      display: block;
+      text-align: center;
+  }
+
+  .second-annons {
+      display: block;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .TV {
+      width: 375px;
+      margin-left: auto;
+      margin-right:auto;
+  }
+
+  .side {
+    display:grid;
+    height: auto;
+
+  }
+
+  .side-by-side {
+      display: inline-block;
+      max-width: 100%;
+  }
+  
+  .annons, .full {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+  .info3 {
+      text-align: center;
+      margin-top: 40px;
+  }
+
+  .products {
+      display: flex;
+  }
+
+  .child-products {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .Android-tv {
+      max-width: 100%;
+  }
+
+  .full {
+      width: auto;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  .footer-container{
+    display: block;
+    text-align: center;
+  }
+}
+
+
